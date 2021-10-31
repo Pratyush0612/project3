@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness club</title>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!--bootstrap CSS only -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="images/logo1.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-md-1 nav-left center">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="nav-right">
+                            <ul class="center">
+                                <li onclick="hide(),home1()" id="home2">HOME</li>
+                                <li onclick="hide(),facility1()" id="facility2">FACILITIES</li>
+                                <li onclick="hide(),form1()" id="form2">FORM</li>
+                                <li onclick="hide(),trainer1()" id="trainer2">TRAINER</li>
+                                <li onclick="hide(),about1()" id="about2">ABOUT US</li>
+                                <li onclick="hide(),contact1()" id="contact2">CONTACT US</li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="header-back" id="home">
+            <div class=" text-container center flex-column">
+                    <div class="col-md-8 center flex-column">
+                        <h1>Fitness Management club</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quas nobis, fugiat ullam harum cupiditate vel architecto incidunt, quibusdam reiciendis voluptates enim ea odio adipisci pariatur, libero sequi ducimus sed! Id obcaecati assumenda consequuntur!</p>
+                    </div>
+                    <div class="head-btn">
+                        <button onclick="hide(),form1()">REGISTERATION</button>
+                        <button onclick="hide(),trainer1()">TRAINER</button>
+                    </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!------------------------------ Facility ---------------------------->
+        <div class="facilities center" id="facility">
+        <div class="service">
+            <div class="ser-col">
+                <h2>HTML</h2>
+                <div class="ser-caption">
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, minus ullam ab corrupti officiis quas
+                    </p>
+                    <button>Know More</button>
+                </div>
+                <img src="images/ser-img1.png" alt="">
+            </div>
+            <div class="ser-col">
+                <h2>CSS</h2>
+                <div class="ser-caption">
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, minus ullam ab corrupti officiis quas
+                    </p>
+                    <button>Know More</button>
+                </div>
+                <img src="images/ser-img2.png" alt="">
+            </div>
+            <div class="ser-col">
+                <h2>JS</h2>
+                <div class="ser-caption">
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, minus ullam ab corrupti officiis quas
+                    </p>
+                    <button>Know More</button>
+                </div>
+                <img src="images/ser-img3.png" alt="">
+            </div>
+        </div>
+        </div>
+        <!-------------------------- form --------------------------->
+        <div class="form center flex-row" id="form">
+            <div class="container">
+            <form action="" onsubmit=" alert('Your response has been recorded')">
+                <div class="row justify-content-around">
+                    <div class="col-md-5 req-left center flex-column">      
+                        <input type="text" name="" id="" placeholder="NAME..." required><br>
+                        <input type="number" placeholder="Age" required><br>
+                        <input type="number" placeholder="Weight" required><br>
+                        <input type="number" placeholder="Height in cm" required><br>
+                        <input type="tel" placeholder="Contact no." required><br>
+                    </div>
+                    <div class="col-md-5 head-btn center flex-column">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Address.."></textarea>
+                        <input type="submit">
+                    </div>
+                </div>
+            </form>
+            </div>
+        </div>
+        <!----------------------------trainer------------------------->
+        <div class="trainer center flex-column" id="trainer">
+        <div class=" container   justify-content-between mt-5">
+            <div class="row center">
+                <div class="col-md-5 ">
+                    <img src="images/trainer.jpg" alt="" srcset="">
+                </div>
+                <div class="col-md-5" style="width: 40vw; height: 85vh;">
+                    <div class="t-right center">
+                        <div class="t-r1 " style="background-color: rgba(53, 45, 45, 0.6);">
+                            <h2>SILVER PLAN</h2>
+                            <p>Got a trainer that Guid you</p>
+                            <h4>Price:- ₹800.00/-</h4>
+                        </div>
+                        <div class="t-r2 " style="background-color: rgba(217, 255, 2, 0.6);">
+                            <h2>GOLD PLAN</h2>
+                            <p>Got a trainer that Guid you, including Diet plan.</p>
+                            <h4>Price:- ₹1000.00/-</h4>
+                        </div>
+                        <div class="t-r3" style="background-color: rgba(168, 156, 156, 0.6);">
+                            <h2>DIAMOND PLAN <i class="fas fa-gem" style="color: rgb(76, 76, 236);"></i></h2>
+                            <p>Got a Personal trainer that Guid you, includin Diet plan.</p>
+                            <h4>Price:- ₹1500.00/-</h4>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!----------------------------about us------------------------------->
+        <div class="aboutus center" id="about">
+            <div class="a-text ">
+                <h3>What we do!</h3>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, corporis cupiditate. Sapiente at vel molestias voluptatum tempore quibusdam numquam. Autem voluptates consequatur, aperiam adipisci distinctio provident iure soluta iusto illo, deleniti impedit? Deserunt illo illum laboriosam. Dolor officiis iusto recusandae beatae vel debitis quidem perspiciatis expedita quo voluptas odio consectetur veritatis ab unde saepe praesentium optio rem laborum laboriosam quaerat, aliquid doloremque. Odit, a aliquam eos dicta similique rerum eaque voluptatem voluptates itaque ducimus quos animi commodi in vitae pariatur possimus, libero culpa vero quas labore fuga! Quo cum temporibus illo eius est, tenetur voluptatem. Inventore, vitae tenetur. Ipsam, doloribus!</P>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, corporis cupiditate. Sapiente at vel molestias voluptatum tempore quibusdam numquam. Autem voluptates consequatur, aperiam adipisci distinctio provident iure soluta iusto illo, deleniti impedit? Deserunt illo illum laboriosam. Dolor officiis iusto recusandae beatae vel debitis quidem perspiciatis expedita quo voluptas odio consectetur veritatis ab unde saepe praesentium optio rem laborum laboriosam quaerat, aliquid doloremque. Odit, a aliquam eos dicta similique rerum eaque voluptatem voluptates itaque ducimus quos animi commodi in vitae pariatur possimus, libero culpa vero quas labore fuga! Quo cum temporibus illo eius est, tenetur voluptatem. Inventore, vitae tenetur. Ipsam, doloribus!</P>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, corporis cupiditate. Sapiente at vel molestias voluptatum tempore quibusdam numquam. Autem voluptates consequatur, aperiam adipisci distinctio provident iure soluta iusto illo, deleniti impedit? Deserunt illo illum laboriosam. Dolor officiis iusto recusandae beatae vel debitis quidem perspiciatis expedita quo voluptas odio consectetur veritatis ab unde saepe praesentium optio rem laborum laboriosam quaerat, aliquid doloremque. Odit, a aliquam eos dicta similique rerum eaque voluptatem voluptates itaque ducimus quos animi commodi in vitae pariatur possimus, libero culpa vero quas labore fuga! Quo cum temporibus illo eius est, tenetur voluptatem. Inventore, vitae tenetur. Ipsam, doloribus!</P>
+                
+            </div>
+        </div>
+        <!---------------------------------- contact---------------------------------------------->
+        <div class="contact center justify-content-around" id="contact">
+            <div class="c-left">
+                <h4>Address.</h4>
+                <p>
+                    3/260,<br>
+                    Sardhana Road,<br>
+                    Kanker Khera,<br>
+                    Meerut(250001),UP.
+                </p>
+                <h4>Contact no.</h4>
+                <p>904586XXXX<br>992724XXXX</p>
+                <h4>E-mail</h4>
+                <p>fitnessno.1@gmail.com</p>
+
+            </div>
+            <div class="c-right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55847.73242405282!2d77.60598427910156!3d28.97304699999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390c668fdea4d87f%3A0x8795def814a486e7!2sMIET%20College!5e0!3m2!1sen!2sin!4v1635584030871!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </main>
+    <!-------------------------------- script ------------------------------->
+    <script>
+        
+        let home =document.getElementById("home");
+        let home2 =document.getElementById("home2");
+        let facility =document.getElementById("facility");
+        let facility2 =document.getElementById("facility2");
+        let form =document.getElementById("form");
+        let form2 =document.getElementById("form2");
+        let trainer =document.getElementById("trainer");
+        let trainer2 =document.getElementById("trainer2");
+        let about =document.getElementById("about");
+        let about2 =document.getElementById("about2");
+        let contact =document.getElementById("contact");
+        let contact2 =document.getElementById("contact2");
+        
+        
+        function hide(){
+            home.style.left="-100vw"
+            facility.style.left="-100vw"
+            form.style.left="-100vw"
+            trainer.style.left="-100vw"
+            about.style.left="-100vw"
+            contact.style.left="-100vw"
+            home2.style.color="rgba(255, 255, 255, 0.63)"
+            facility2.style.color="rgba(255, 255, 255, 0.63)"
+            form2.style.color="rgba(255, 255, 255, 0.63)"
+            trainer2.style.color="rgba(255, 255, 255, 0.63)"
+            about2.style.color="rgba(255, 255, 255, 0.63)"
+            contact2.style.color="rgba(255, 255, 255, 0.63)"
+
+
+        }
+        function home1(){
+            home2.style.color="white";
+            home.style.left="0";
+        }
+        function facility1(){
+            facility2.style.color="white";
+            facility.style.left="0";
+        }
+        function form1(){
+            form.style.left="0";
+            form2.style.color="white";
+        }
+        function trainer1(){
+            trainer.style.left="0";
+            trainer2.style.color="white";
+        }
+        function about1(){
+            about.style.left="0";
+            about2.style.color="white";
+        }
+        function contact1(){
+            contact2.style.color="white";
+            contact.style.left="0";
+        }
+        
+    </script>
+</body>
+</html>
